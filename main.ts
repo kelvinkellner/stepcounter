@@ -1,3 +1,4 @@
+let steps = 0
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(steps)
     basic.clearScreen()
@@ -13,9 +14,7 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
     steps += 1
     basic.showNumber(steps)
+    if (steps % 5 == 0) {
+        music.playMelody("C E G B F A C5 C5 ", 200)
+    }
 })
-let steps = 0
-for (let index = 0; index <= 9; index++) {
-    let milestones: number[] = []
-    milestones.push(0 + 0)
-}
