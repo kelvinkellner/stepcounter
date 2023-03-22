@@ -8,13 +8,13 @@ input.onButtonPressed(Button.AB, function () {
     basic.showNumber(steps)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Wooh!")
+    basic.showString("Wooh")
     basic.showNumber(steps)
 })
 input.onGesture(Gesture.Shake, function () {
     steps += 1
     basic.showNumber(steps)
-    if (steps % 5 == 0) {
+    if (steps % 1000 == 0) {
         music.playMelody("C E G B F A C5 C5 ", 200)
     }
 })
