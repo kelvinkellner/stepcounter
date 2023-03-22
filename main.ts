@@ -8,7 +8,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.showNumber(steps)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Wooh")
+    basic.showString("Wooh!")
     basic.showNumber(steps)
 })
 input.onGesture(Gesture.Shake, function () {
