@@ -13,8 +13,8 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     steps += 1
-    basic.showNumber(steps)
     if (steps % 1000 == 0) {
         music.playMelody("C E G B F A C5 C5 ", 200)
     }
+    basic.showNumber(steps)
 })
